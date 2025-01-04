@@ -1,48 +1,10 @@
 const express = require('express');
 const app = express();
+
+// Learning portion
 const helmet = require('helmet');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.use(helmet.hidePoweredBy());
+app.use(helmet.frameguard({ action: 'DENY'}));
 
 
 
